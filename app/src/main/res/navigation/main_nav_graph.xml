@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/recordsFragment">
+
+    <fragment
+        android:id="@+id/recordsFragment"
+        android:name="com.example.studentfeedback.RecordsFragment"
+        android:label="fragment_records"
+        tools:layout="@layout/fragment_records" >
+        <action
+            android:id="@+id/action_recordsFragment_to_updateRecordsFragment"
+            app:destination="@id/updateRecordsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/recordsFragment" />
+        <action
+            android:id="@+id/action_recordsFragment_to_captureRecordsFragment"
+            app:destination="@id/captureRecordsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/recordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/captureRecordsFragment"
+        android:name="com.example.studentfeedback.CaptureRecordsFragment"
+        android:label="fragment_capture_records"
+        tools:layout="@layout/fragment_capture_records" />
+    <fragment
+        android:id="@+id/updateRecordsFragment"
+        android:name="com.example.studentfeedback.UpdateRecordsFragment"
+        android:label="fragment_update_records"
+        tools:layout="@layout/fragment_update_records" >
+        <argument
+            android:name="feedback"
+            app:argType="com.example.studentfeedback.model.Feedback" />
+    </fragment>
+</navigation>

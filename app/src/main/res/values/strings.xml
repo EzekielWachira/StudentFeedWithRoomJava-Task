@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StudentFeedback</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_feedback">Add feedback</string>
+    <string name="click_the_button_below_to_add_feedback">Click the button below to add feedback</string>
+    <string name="module_name">Module name</string>
+    <string name="submit_feedback">Submit feedback</string>
+    <string name="update_feedback">Update feedback</string>
+</resources>

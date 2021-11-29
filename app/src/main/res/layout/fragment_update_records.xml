@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UpdateRecordsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Update feedback record"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/module_name"
+            android:textSize="@dimen/_10ssp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/module_name_holder"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="@string/module_name"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_file_rename">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/module_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Was learning outcome clearly communicated?"
+            android:textSize="@dimen/_10ssp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_learning_outcome_com"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_learning_outcome_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"/>
+            <RadioButton
+                android:id="@+id/radio_learning_outcome_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"/>
+            <RadioButton
+                android:id="@+id/radio_learning_outcome_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3"/>
+            <RadioButton
+                android:id="@+id/radio_learning_outcome_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="4"/>
+            <RadioButton
+                android:id="@+id/radio_learning_outcome_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"/>
+        </RadioGroup>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="The learning opportunities enabled me to achieve the learning outcomes"
+            android:textSize="@dimen/_10ssp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupOpportunities"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_opportunities_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"/>
+            <RadioButton
+                android:id="@+id/radio_opportunities_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"/>
+            <RadioButton
+                android:id="@+id/radio_opportunities_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3"/>
+            <RadioButton
+                android:id="@+id/radio_opportunities_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="4"/>
+            <RadioButton
+                android:id="@+id/radio_opportunities_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"/>
+        </RadioGroup>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Relevance of the module to my qualification was clear to me"
+            android:textSize="@dimen/_10ssp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupRelevance"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_relevance_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"/>
+            <RadioButton
+                android:id="@+id/radio_relevance_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"/>
+            <RadioButton
+                android:id="@+id/radio_relevance_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3"/>
+            <RadioButton
+                android:id="@+id/radio_relevance_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="4"/>
+            <RadioButton
+                android:id="@+id/radio_relevance_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"/>
+        </RadioGroup>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="The lecturer responded in a comprehensive and timely way"
+            android:textSize="@dimen/_10ssp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupResponse"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_response_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"/>
+            <RadioButton
+                android:id="@+id/radio_response_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"/>
+            <RadioButton
+                android:id="@+id/radio_response_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3"/>
+            <RadioButton
+                android:id="@+id/radio_response_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="4"/>
+            <RadioButton
+                android:id="@+id/radio_response_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"/>
+        </RadioGroup>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Technology-enhanced teaching and assessment enriched my learning"
+            android:textSize="@dimen/_10ssp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEnhancedTeaching"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_enhanced_reaching_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"/>
+            <RadioButton
+                android:id="@+id/radio_enhanced_reaching_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"/>
+            <RadioButton
+                android:id="@+id/radio_enhanced_reaching_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3"/>
+            <RadioButton
+                android:id="@+id/radio_enhanced_reaching_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="4"/>
+            <RadioButton
+                android:id="@+id/radio_enhanced_reaching_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"/>
+        </RadioGroup>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="What aspects of this module or section need to be improved?"
+            android:textSize="@dimen/_10ssp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aspect_holder"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Type here"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_file_rename">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aspect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/btn_update"
+            android:layout_height="@dimen/_50sdp"
+            android:text="@string/update_feedback"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
